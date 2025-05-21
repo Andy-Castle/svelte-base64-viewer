@@ -80,6 +80,18 @@
 			Visualizar
 		</button>
 
+		<button
+			on:click={() => {
+				base64 = '';
+				mime = null;
+				blobUrl = null;
+				error = null;
+			}}
+			class="mt-4 px-6 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition mx-auto"
+		>
+			Borrar
+		</button>
+
 		{#if mime}
 			<p class="mt-4 text-center text-sm text-gray-700"><strong>Tipo MIME:</strong> {mime}</p>
 		{/if}
